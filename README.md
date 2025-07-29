@@ -8,26 +8,33 @@ To develop and evaluate predictive models for hepatitis C diagnosis using superv
 
 ## 📁 Project structure
 
-```hepatitisC-TFM/
+```
+hepatitisC_TFM/
 │
-├── data/
-│ └── hepatitisC.csv # Original dataset
+├── data/                      # Datasets originales o limpios
+│   └── hepatitisC.csv
 │
-├── notebooks/
-│ ├── 01_EDA.ipynb # Exploratory data analysis
-│ ├── 02_Statistics.ipynb # Hypothesis tests and correlations
-│ ├── 03_Modeling.ipynb # Model training and evaluation
-│ └── 04_Report_Generation.ipynb # Tables and figures for the final report
+├── src/                       # Código fuente organizado por módulos
+│   ├── __init__.py
+│   ├── preprocessing.py       # Limpieza y preparación de datos
+│   ├── eda.py                 # Análisis exploratorio de datos
+│   ├── stats.py               # Estadística y correlaciones
+│   ├── modeling.py            # Modelado predictivo y evaluación
+│   └── visualization.py       # Funciones de visualización
 │
-├── src/
-│ └── data_utils.py # Clean reusable functions
+├── results/                   # Figuras, tablas y resultados exportados
+│   ├── figures/
+│   └── tables/
 │
-├── results/
-│ └── *.png # Exported visualizations
+├── scripts/                   # Scripts de ejecución secuencial
+│   ├── run_eda.py
+│   ├── run_stats.py
+│   ├── run_modeling.py
+│   └── generate_report.py
 │
+├── requirements.txt
 ├── README.md
-├── RUN.md # Instructions to run this project
-└── requirements.txt
+└── RUN.md
 ```
 
 ## 🛠️ Tools and libraries
