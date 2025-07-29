@@ -7,7 +7,8 @@ This repository contains my Master's Thesis (TFM) in Biostatistics and Bioinform
 To develop and evaluate predictive models for hepatitis C diagnosis using supervised machine learning techniques, including data exploration, hypothesis testing, feature correlations, and model performance analysis.
 
 ## 📁 Project structure
-hepatitisC-TFM/
+
+```hepatitisC-TFM/
 │
 ├── data/
 │ └── hepatitisC.csv # Original dataset
@@ -18,15 +19,16 @@ hepatitisC-TFM/
 │ ├── 03_Modeling.ipynb # Model training and evaluation
 │ └── 04_Report_Generation.ipynb # Tables and figures for the final report
 │
-├── utils/
+├── src/
 │ └── data_utils.py # Clean reusable functions
 │
-├── figures/
+├── results/
 │ └── *.png # Exported visualizations
 │
 ├── README.md
 ├── RUN.md # Instructions to run this project
 └── requirements.txt
+```
 
 ## 🛠️ Tools and libraries
 
